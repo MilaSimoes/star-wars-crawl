@@ -1,0 +1,47 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	font-size: 62.5%;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #000;
+	font-family: 'Oswald', sans-serif;
+}
+
+@font-face {
+	font-family: 'Jedi';
+	src:  url('../assets/starjedi/Starjhol.ttf');
+}
+
+.text {
+	font-size: 10rem;
+	font-family: 'Jedi';
+}
+
+.aLongTimeAgo {
+	color: #379ed1;
+	font-size: 5rem;
+	font-weight: 300;
+	letter-spacing: 1px;
+	word-spacing: 5px;
+	animation: fadeAway 2s linear 3s forwards;
+}
+
+@keyframes fadeAway {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		display: none;
+	}
+}
